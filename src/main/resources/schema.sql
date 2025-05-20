@@ -102,7 +102,7 @@ ALTER TABLE usuario DROP CONSTRAINT IF EXISTS fk_usuario_domicilio;
 ALTER TABLE usuario
   ADD CONSTRAINT fk_usuario_contacto FOREIGN KEY (c_id_contacto) REFERENCES contacto(c_id),
   ADD CONSTRAINT fk_usuario_domicilio FOREIGN KEY (c_id_domicilio) REFERENCES domicilio(c_id);
-
+--fks
 -- FK para contacto
 ALTER TABLE contacto DROP CONSTRAINT IF EXISTS fk_contacto_usuario;
 ALTER TABLE contacto
